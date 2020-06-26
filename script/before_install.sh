@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '..loading'
+cp /var/www/html/magento-app/aws/* /var/www/html/magento-app/src
