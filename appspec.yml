@@ -5,10 +5,10 @@ files:
       destination: /var/www/html/magento-app/src
 hooks:
     BeforeInstall:
-        - location: bin/before_install.sh
+        - location: script/before_install.sh
           timeout: 300
           runas: root
     AfterInstall:
-        - location: bin/after_install.sh
+        - location: script/after_install.sh
           timeout: 300
           runas: root

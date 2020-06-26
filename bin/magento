@@ -1,2 +1,0 @@
-#!/bin/bash
-bin/cli php -dmemory_limit=2G bin/magento "$@"
