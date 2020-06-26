@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_PATH='/var/www/html/magento-app/bin'
+APP_PATH='/var/www/html/magento-app/src/bin'
 
 sh $APP_PATH/env
 sh $APP_PATH/composer install
