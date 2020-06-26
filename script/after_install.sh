@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_PATH='/var/www/html/magento-app/src/script'
+APP_PATH='/var/www/html/magento-app/release/script'
 
 sh $APP_PATH/composer install
 sh $APP_PATH/env
