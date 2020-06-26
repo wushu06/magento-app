@@ -1,0 +1,26 @@
+{
+  "name" : "elementarydigital/magento2-webp",
+  "description" : "Magento 2 Webp Module",
+  "require" : {
+    "php" : "~7.1.0|~7.2.0|~7.3.0",
+    "magento/framework" : "100.0.*|100.1.*|101.0.*|102.0.*",
+    "yireo/magento2-webp2": "^0.4.6"
+  },
+  "authors": [
+    {
+      "name": "Arnolds Kozlovskis",
+      "email": "arnie@elementarydigital.co.uk"
+    },
+    {
+      "name": "Michael Cole",
+      "email": "mike@elementarydigital.co.uk"
+    }
+  ],
+  "type" : "magento2-module",
+  "autoload" : {
+    "files" : ["registration.php"],
+    "psr-4" : {
+      "Elementary\\Webp\\" : ""
+    }
+  }
+}
