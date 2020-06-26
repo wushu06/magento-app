@@ -1,3 +1,3 @@
 #!/bin/bash
 #fixowns
-sh ./test.sh
+sh /var/www/html/WordPress/bin/test.sh
