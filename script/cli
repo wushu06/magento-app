@@ -2,4 +2,4 @@
 [ -z "$1" ] && echo "Please specify a CLI command (ex. ls)" && exit
 ID=$( docker ps -aqf "name=php-fpm-")
 eval $ID
- docker exec  --user=root $ID  "$@"
+docker exec  --user=root $ID  "$@"

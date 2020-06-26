@@ -12,7 +12,6 @@ fi;
 sudo rm -rf $ROOT/release/*
 \cp -Rf $ROOT/aws/* $ROOT/release
 \cp -Rf $ROOT/shared/auth.json $ROOT/release/auth.json
-\cp -Rf $ROOT/shared/env.php $ROOT/release/app/etc/env.php
 chmod +x  $ROOT/release/script/*
 
 
