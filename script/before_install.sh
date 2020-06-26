@@ -1,8 +1,12 @@
 #!/bin/bash
 ROOT=/var/www/html/magento-app
 
-mkdir -p $ROOT/release
-mkdir -p $ROOT/aws
+if [ ! -d $ROOT/release ]; then
+    mkdir -p $ROOT/release;
+fi;
+if [ ! -d $ROOT/aws ]; then
+    mkdir -p $ROOT/aws;
+fi;
 
 \cp -Rf $ROOT/aws/* $ROOT/release
 \cp -Rf $ROOT/shared/* $ROOT/release
