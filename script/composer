@@ -1,2 +1,3 @@
 #!/bin/bash
-sh cli composer "$@"
+APP_PATH='/var/www/html/magento-app/src/script'
+sh $APP_PATH/cli composer "$@"

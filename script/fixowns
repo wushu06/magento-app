@@ -1,10 +1,11 @@
 #!/bin/bash
 echo "Correcting filesystem ownerships..."
+APP_PATH='/var/www/html/magento-app/src/script'
 
 if [ -z "$1" ]; then
-  sh rootnotty chown -R www:www /var/www/
+ sh $APP_PATH/clinotty chown -R www:www /var/www/
 else
-  sh rootnotty chown -R www:www /var/www/html/$1
+  sh $APP_PATH/clinotty chown -R www:www /var/www/html/$1
 fi
 
 echo "Filesystem ownerships corrected."

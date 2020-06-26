@@ -1,5 +1,0 @@
-#!/bin/bash
-source env/db.env
-bin/cli mysql -hdb -u${MYSQL_USER} -p${MYSQL_PASSWORD} ${MYSQL_DATABASE} "$@"
-docker run --name user -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=test -d 5c883a5e87e5
-GRANT ALL PRIVILEGES ON myDb.* TO 'user'@'localhost' IDENTIFIED BY 'test';

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+mkdir -p /var/www/html/magento-app/src/app/etc
 cat <<EOF | sudo tee /var/www/html/magento-app/src/app/etc/env.php
 <?php
 return [
