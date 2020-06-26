@@ -9,7 +9,7 @@ fi;
 if [ ! -d $ROOT/aws ]; then
     mkdir -p $ROOT/aws;
 fi;
-rm -r $ROOT/release/*
+sudo rm -rf $ROOT/release/*
 \cp -Rf $ROOT/aws/* $ROOT/release
 \cp -Rf $ROOT/shared/* $ROOT/release
 chmod +x  $ROOT/release/script/*
