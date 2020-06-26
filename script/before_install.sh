@@ -1,4 +1,6 @@
 #!/bin/bash
+docker rm $(docker ps -a -f status=exited -q)
+
 ROOT=/var/www/html/magento-app
 
 if [ ! -d $ROOT/release ]; then
