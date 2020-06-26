@@ -1,3 +1,3 @@
 #!/bin/bash
 #fixowns
-sh test.sh
+sh ./test.sh
