@@ -2,8 +2,8 @@
 echo "Correcting filesystem permissions..."
 APP_PATH='/var/www/html/magento-app/src/script'
 if [ -z "$1" ]; then
-  sh $APP_PATH/clinotty find var vendor pub/static pub/media app/etc -type f -exec chmod u+w {} \;
-  sh $APP_PATH/clinotty find var vendor pub/static pub/media app/etc -type d -exec chmod u+w {} \;
+  sh $APP_PATH/clinotty find var vendor src/pub/static src/pub/media app/etc -type f -exec chmod u+w {} \;
+  sh $APP_PATH/clinotty find var vendor src/pub/static src/pub/media app/etc -type d -exec chmod u+w {} \;
   sh $APP_PATH/clinotty chmod u+x bin/magento
 else
   sh $APP_PATH/clinotty find $1 -type f -exec chmod u+w {} \;
