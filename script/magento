@@ -1,4 +1,4 @@
 #!/bin/bash
-APP_PATH='/var/www/html/magento-app/release/script'
+APP_PATH='/var/www/html/release/script'
 
 sh $APP_PATH/cli php -dmemory_limit=2G release/bin/magento "$@"

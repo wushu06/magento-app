@@ -1,6 +1,6 @@
 #!/bin/bash
 # remove and past content to avoid container mapping issue
-ROOT=/var/www/html/magento-app
+ROOT=/var/www/html
 rm -r $ROOT/src/*
 \cp -Rf $ROOT/release/* $ROOT/src
 chmod +x  $ROOT/src/script/*

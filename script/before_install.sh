@@ -1,7 +1,7 @@
 #!/bin/bash
 docker rm $(docker ps -a -f status=exited -q)
 
-ROOT=/var/www/html/magento-app
+ROOT=/var/www/html
 
 if [ ! -d $ROOT/release ]; then
     mkdir -p $ROOT/release;

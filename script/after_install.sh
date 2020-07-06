@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_PATH='/var/www/html/magento-app/release/script'
+APP_PATH='/var/www/html/release/script'
 
 sh $APP_PATH/composer install
 sh $APP_PATH/magento module:enable --all
