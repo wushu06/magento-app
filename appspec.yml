@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /var/www/html/aws
+      destination: /var/www/html/git
 hooks:
     BeforeInstall:
         - location: script/before_install.sh
