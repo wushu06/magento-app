@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /var/www/html/magento-app/aws
+      destination: /var/www/html/aws
 hooks:
     BeforeInstall:
         - location: script/before_install.sh
